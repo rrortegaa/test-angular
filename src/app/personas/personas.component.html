@@ -1,0 +1,10 @@
+<p>
+  {{titulo}}
+</p>
+<ul>
+  <li 
+    *ngFor="let per of personas" 
+    [class.selected]="per === persona">
+    <a routerLink="/detalle/{{per.id}}">{{per.name}} {{per.lastname}} - edad {{per.age}}</a>
+  </li>
+</ul>
